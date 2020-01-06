@@ -1,5 +1,0 @@
-- name: Install all security, critical, and rollup updates and reboot if necessary
-    hosts: all
-      win_updates:
-        category_names: all
-        reboot: yes
