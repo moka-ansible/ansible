@@ -1,3 +1,4 @@
-hosts: all
-- name: Get host's name
-  win_shell: $env:computername
+- hosts: all
+  tasks:
+    - name: Get host's name
+      win_shell: $env:computername
