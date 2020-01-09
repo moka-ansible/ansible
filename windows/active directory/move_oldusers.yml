@@ -1,1 +1,2 @@
-- win_shell: 
+- name: Get host's name
+  win_shell: $env:computername
