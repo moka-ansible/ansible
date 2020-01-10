@@ -4,5 +4,5 @@
       win_shell: Write-Host $env:computername
       register: stdout
 
-- debug: msg="{{ stdout.stdout }}"
-- debut: msg="{{ stdout.stderr }}"
+    - debug: var=stdout.stdout
+    - debut: var=stdout.stderr
