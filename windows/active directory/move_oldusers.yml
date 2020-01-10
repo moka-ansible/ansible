@@ -1,4 +1,6 @@
 - hosts: all
   tasks:
-    - name: Get host's name
-      win_shell: $env:computername
+    - name: Run an executable and send data to the stdin for the executable
+      win_command: powershell.exe -
+       args:
+        stdin: Write-Host $env:computername
