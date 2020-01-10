@@ -5,4 +5,4 @@
       register: stdout
 
     - debug: var={{ stdout.stdout_lines }}
-    - debut: var={{ stdout.stderr_lines }}
+    - debug: var={{ stdout.stderr_lines }}
