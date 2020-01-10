@@ -2,7 +2,7 @@
   tasks:
     - name: Get host's name
       win_shell: Write-Host $env:computername
-      register: stdout
+      register: return
 
-    - debug: var={{ stdout.stdout_lines }}
-    - debug: var={{ stdout.stderr_lines }}
+    - debug: var=return.stdout_lines
+    - debug: var=return.stderr_lines
