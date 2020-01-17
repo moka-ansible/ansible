@@ -4,7 +4,6 @@
     win_updates:
       category_names: all
       server_selection: windows_update
-      reboot: yes 
-    register: result
+      reboot: yes
     
-  - debug: var=result.updates.title
+  - debug: var=updates.title
