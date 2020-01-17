@@ -6,4 +6,4 @@
       server_selection: windows_update
       reboot: yes
     
-  - debug: var=updates.title
+  # - debug: updates.title
