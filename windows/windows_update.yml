@@ -8,4 +8,3 @@
     register: result
     
     - debug: var=result.updates.title
-      
