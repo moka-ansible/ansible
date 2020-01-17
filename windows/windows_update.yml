@@ -7,5 +7,5 @@
       reboot: yes 
     register: result
     
-   - debug: 
+  - debug: 
     var: result.updates.title
