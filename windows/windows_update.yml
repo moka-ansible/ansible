@@ -7,3 +7,7 @@
       reboot: yes
     
   # - debug: updates.title
+  - name: Reboot host
+    win_reboot:
+      pre_reboot_delay: 60
+      reboot_timeout: 600
