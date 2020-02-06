@@ -3,7 +3,7 @@
   - name: Reboot prior updates
     win_reboot:
       pre_reboot_delay: 60
-      reboot_timeout: 600
+      reboot_timeout: 3600
       
   - name: Install all updates and reboot if necessary
     win_updates:
@@ -23,4 +23,4 @@
   - name: Reboot host post updates
     win_reboot:
       pre_reboot_delay: 60
-      reboot_timeout: 600
+      reboot_timeout: 3600
