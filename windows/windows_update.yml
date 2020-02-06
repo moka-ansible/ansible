@@ -13,7 +13,6 @@
       - SecurityUpdates
       - Updates
       - ServicePacks
-      - FeaturePacks
       - UpdateRollups
       log_path: C:\Temp\Updates.log
       server_selection: windows_update
