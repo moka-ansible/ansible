@@ -1,5 +1,10 @@
 - hosts: all
   tasks:
+  - name: Reboot prior updates
+    win_reboot:
+      pre_reboot_delay: 60
+      reboot_timeout: 600
+      
   - name: Install all updates and reboot if necessary
     win_updates:
       reboot: yes
@@ -14,9 +19,8 @@
       log_path: C:\Temp\Updates.log
       server_selection: windows_update
 
-    
-  # - debug: updates.title
-  - name: Reboot host
+# - debug: updates.title
+  - name: Reboot host post updates
     win_reboot:
       pre_reboot_delay: 60
       reboot_timeout: 600
