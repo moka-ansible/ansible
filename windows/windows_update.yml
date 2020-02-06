@@ -8,19 +8,14 @@
   - name: Install all updates
     win_updates:
       category_names:
-        - CriticalUpdates
-        - DefinitionUpdates
-        - SecurityUpdates
-        - Updates
-        - ServicePacks
-        - FeaturePacks
-        - UpdateRollups
+      - CriticalUpdates
+      - DefinitionUpdates
+      - SecurityUpdates
+      - Updates
+      - ServicePacks
+      - FeaturePacks
+      - UpdateRollups
       log_path: C:\Temp\Updates.log
       server_selection: windows_update
       reboot: yes
-
-# - debug: updates.title
-  - name: Reboot host post updates
-    win_reboot:
-      pre_reboot_delay: 60
       reboot_timeout: 3600
