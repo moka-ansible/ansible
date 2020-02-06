@@ -5,7 +5,7 @@
       pre_reboot_delay: 60
       reboot_timeout: 3600
       
-  - name: Install all updates and reboot if necessary
+  - name: Install all updates
     win_updates:
       reboot: yes
       category_names:
