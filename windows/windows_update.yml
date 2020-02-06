@@ -7,7 +7,6 @@
       
   - name: Install all updates
     win_updates:
-      reboot: yes
       category_names:
         - CriticalUpdates
         - DefinitionUpdates
@@ -18,6 +17,7 @@
         - UpdateRollups
       log_path: C:\Temp\Updates.log
       server_selection: windows_update
+      reboot: yes
 
 # - debug: updates.title
   - name: Reboot host post updates
