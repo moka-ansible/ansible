@@ -2,5 +2,4 @@
   tasks:
   - name: Create local user Ansible
     win_user:
-      description: "
-     
+      description: ""
