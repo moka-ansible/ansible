@@ -2,4 +2,11 @@
   tasks:
   - name: Create local user Ansible
     win_user:
-      description: ""
+      name: ansible
+      password: Bj7QWMEig0v143er
+      password_expired: no
+      password_never_expires: yes
+      description: "Compte local d'administration Ansible"
+      groups_action: add
+      groups:
+        - Administrators
